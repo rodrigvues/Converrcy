@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Container, Input, Select, Paragraph } from './styles';
 
-// usando interface pra armazenar api key que tem os dados da conversão ( mudarei pra arq. env futuramente )
+// usando interface pra armazenar api key que tem os dados da conversão
 interface ExchangeRatesResponse {
   data: {
     [key: string]: {
@@ -11,8 +11,9 @@ interface ExchangeRatesResponse {
   };
 }
 
-// api key armazenada em variável ( mudarei pra arq. env futuramente )
-const API_KEY = 'cur_live_WeM6eXGSUkbAwLN6YoidkJWx8q7znrHtluU27N5H';
+// api key armazenada no .env 
+const API_KEY = process.env.API_KEY;
+
 
 //começo do código
 const Converter: React.FC = () => {

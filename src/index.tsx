@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Converter from './components/Converter';
+require('dotenv').config();
 
 const App = () => (
   <div>
