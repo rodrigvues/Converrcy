@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Container, Input, Select, Paragraph } from './styles';
 
 // usando interface pra armazenar api key que tem os dados da conversão ( mudarei pra arq. env futuramente )
 interface ExchangeRatesResponse {
@@ -89,26 +90,26 @@ const Converter: React.FC = () => {
 
   // começo do html
   return (
-    <div>
-      <input type="number" value={amount} onChange={handleAmountChange} />
-      <select value={fromCurrency} onChange={handleFromCurrencyChange}>
-        {currencies.map((currency) => (
-          <option key={currency} value={currency}>
-            {currency}
-          </option>
-        ))}
-      </select>
-      <select value={toCurrency} onChange={handleToCurrencyChange}>
-        {currencies.map((currency) => (
-          <option key={currency} value={currency}>
-            {currency}
-          </option>
-        ))}
-      </select>
-      <p>
-        {amount} {fromCurrency} is {convert(amount, exchangeRate)} {toCurrency}
-      </p>
-    </div>
+    <Container>
+    <Input type="number" value={amount} onChange={handleAmountChange} />
+    <Select value={fromCurrency} onChange={handleFromCurrencyChange}>
+      {currencies.map((currency) => (
+        <option key={currency} value={currency}>
+          {currency}
+        </option>
+      ))}
+    </Select>
+    <Select value={toCurrency} onChange={handleToCurrencyChange}>
+      {currencies.map((currency) => (
+        <option key={currency} value={currency}>
+          {currency}
+        </option>
+      ))}
+    </Select>
+    <Paragraph>
+      {amount} {fromCurrency} is {convert(amount, exchangeRate)} {toCurrency}
+    </Paragraph>
+  </Container>
   );
 };
 
