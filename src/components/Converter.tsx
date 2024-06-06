@@ -12,7 +12,7 @@ interface ExchangeRatesResponse {
 }
 
 // api key armazenada no .env 
-const API_KEY = process.env.API_KEY;
+const API_KEY = 'cur_live_WeM6eXGSUkbAwLN6YoidkJWx8q7znrHtluU27N5H';
 
 
 //começo do código

@@ -26,4 +26,4 @@ export const Select = styled.select`
 export const Paragraph = styled.p`
   font-size: 18px;
   color: #333;
-`;
+`; 

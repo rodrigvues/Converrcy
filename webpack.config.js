@@ -9,7 +9,15 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js'],
+    fallback: {
+      "path": require.resolve("path-browserify"),
+      "os": require.resolve("os-browserify/browser"),
+      "crypto": require.resolve("crypto-browserify"),
+      "buffer": require.resolve("buffer/"),
+      "vm": require.resolve("vm-browserify"),
+      "stream": require.resolve("stream-browserify")
+    }
   },
   module: {
     rules: [
@@ -32,18 +40,6 @@ module.exports = {
     compress: true,
     port: 9000,
     open: true
-  },
-
-  resolve: {
-    fallback: {
-      "path": require.resolve("path-browserify"),
-      "os": require.resolve("os-browserify/browser"),
-      "crypto": require.resolve("crypto-browserify"),
-      "buffer": require.resolve("buffer/"),
-      "vm": require.resolve("vm-browserify"),
-      "stream": require.resolve("stream-browserify"),
-      "stream": require.resolve("stream-browserify")
-    }
   }
 };
 
