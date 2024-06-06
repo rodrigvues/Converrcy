@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Container, Input, Select, Paragraph } from './styles';
 
 // usando interface pra armazenar api key que tem os dados da conversão
+// ( mudarei pra arq. env futuramente )
 interface ExchangeRatesResponse {
   data: {
     [key: string]: {
@@ -11,7 +12,7 @@ interface ExchangeRatesResponse {
   };
 }
 
-// api key armazenada no .env 
+// api key armazenada em variável ( mudarei pra arq. env futuramente )
 const API_KEY = 'cur_live_WeM6eXGSUkbAwLN6YoidkJWx8q7znrHtluU27N5H';
 
 
