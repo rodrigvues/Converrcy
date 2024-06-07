@@ -1,4 +1,3 @@
-// src/GlobalStyle.ts
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -12,6 +11,13 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Inter', sans-serif;
+    background-color: #04471c; /* Change this to your desired background color */
+    color: #f1f7ed; /* Optional: change the default text color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 `;
 
