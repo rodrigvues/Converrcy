@@ -17,11 +17,16 @@ export const Input = styled.input`
 `;
 
 export const Select = styled.select`
-  margin: 10px 0;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
+`;
+
+export const SelectContainer = styled.div`
+  display: flex;
+  flex-direction: row; /* Stack the selects vertically */
+  gap: 10px; /* Add space between the selects */
 `;
 
 export const Paragraph = styled.p`
