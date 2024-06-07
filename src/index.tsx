@@ -5,7 +5,7 @@ import GlobalStyle from './GlobalStyle';
 
 const App = () => (
   <div>
-    <h1>Converrcy Teste de novo</h1>
+    <h1>Converrcy</h1>
     <GlobalStyle />
     <Converter />
   </div>
