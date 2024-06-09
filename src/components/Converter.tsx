@@ -111,7 +111,7 @@ const Converter: React.FC = () => {
       </Select>
     </SelectContainer>
     <Paragraph>
-      {amount} {fromCurrency} is {convert(amount, exchangeRate)} {toCurrency}
+      {amount} {fromCurrency} = {convert(amount, exchangeRate)} {toCurrency}
     </Paragraph>
   </Container>
   );
