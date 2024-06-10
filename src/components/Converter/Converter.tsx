@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Container, Input, Select, Paragraph, SelectContainer, ResultButton, AddButton } from './styles';
+import { Container, Input, Select, SelectContainer, ResultButton, AddButton, Row } from './styles';
 // usando interface pra armazenar api key que tem os dados da conversão
 // ( mudarei pra arq. env futuramente )
 interface ExchangeRatesResponse {
@@ -92,31 +92,32 @@ const Converter: React.FC = () => {
   // começo do html
   return (
     <Container>
-      <Input type="number" value={amount} onChange={handleAmountChange} />
-      <SelectContainer>
-        <Select value={fromCurrency} onChange={handleFromCurrencyChange}>
-          {currencies.map((currency) => (
-            <option key={currency} value={currency}>
-              {currency}
-            </option>
-          ))}
-        </Select>
-        <Select value={toCurrency} onChange={handleToCurrencyChange}>
-          {currencies.map((currency) => (
-            <option key={currency} value={currency}>
-              {currency}
-            </option>
-          ))}
-        </Select>
-      </SelectContainer>
-      <ResultButton>
-        {amount} {fromCurrency} → {convert(amount, exchangeRate)} {toCurrency}
-      </ResultButton>
-      <AddButton>+</AddButton>
-      <Paragraph>
-        Easily convert currencies with real-time exchange rates and share your conversions with friends. Whether you’re traveling or managing your finances, stay updated and share your results with Converrcy!
-      </Paragraph>
-    </Container>
+    <Row>
+    <Input type="number" value={amount} onChange={handleAmountChange} />
+    <SelectContainer>
+      <Select value={fromCurrency} onChange={handleFromCurrencyChange}>
+        {currencies.map((currency) => (
+          <option key={currency} value={currency}>
+            {currency}
+          </option>
+        ))}
+      </Select>
+      <Select value={toCurrency} onChange={handleToCurrencyChange}>
+        {currencies.map((currency) => (
+          <option key={currency} value={currency}>
+            {currency}
+          </option>
+        ))}
+      </Select>
+    </SelectContainer>
+  </Row>
+  <Row>
+    <ResultButton>
+      {amount} {fromCurrency} → {convert(amount, exchangeRate)} {toCurrency}
+    </ResultButton>
+    <AddButton>+</AddButton>
+  </Row>
+  </Container>
   );
 };
 

@@ -2,20 +2,29 @@ import styled from 'styled-components';
 
 export const NavContainer = styled.div`
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px;
-  background-color: #004400;
-  color: #ffdd55;
+  background-color: #04471C;
+  color: #E0EEC6;
+`;
+
+export const Logo = styled.img`
+  height: 40px;  // Adjust height as needed
+`;
+
+export const NavItems = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 export const NavItem = styled.div`
   margin: 0 10px;
   cursor: pointer;
-`;
+  color: #E0EEC6;
+  text-decoration: none; // Remove underline
 
-export const MenuButton = styled.div`
-  cursor: pointer;
-  font-size: 1.5em;
-  margin-right: 10px;
+  &:hover {
+    text-decoration: none; // Ensure no underline on hover
+  }
 `;
-

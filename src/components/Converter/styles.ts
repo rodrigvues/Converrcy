@@ -5,8 +5,15 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #004400;
-  color: #ffdd55;
+  background-color: #04471C;
+  color: #E0EEC6;
+`;
+
+export const Row = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 `;
 
 export const Input = styled.input`
@@ -29,18 +36,13 @@ export const Select = styled.select`
   padding: 10px;
   font-size: 1.2rem;
   border-radius: 5px;
-  border: 1px solid #ddd;
-`;
-
-export const Paragraph = styled.p`
-  margin: 20px 0;
-  text-align: center;
-  max-width: 600px;
+  border: 1px solid #E0EEC6;
+  color: E0EEC6;
 `;
 
 export const ResultButton = styled.div`
-  background-color: #ffdd55;
-  color: #004400;
+  background-color: #C2A83E;
+  color: #171717;
   padding: 10px 20px;
   margin: 10px 0;
   border-radius: 5px;
@@ -49,7 +51,7 @@ export const ResultButton = styled.div`
 `;
 
 export const AddButton = styled.button`
-  background-color: #00aa00;
+  background-color: #7CA982;
   color: white;
   padding: 10px;
   margin: 10px 0;

@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import Converter from './components/Converter/Converter';
 import GlobalStyle from './GlobalStyle';
 import Navbar from './components/Navbar/Navbar';
-import Logo from './components/Logo/Logo';
+import Paragraph from './components/Paragraph/Paragraph';
 
 const App = () => (
   <div>
     <GlobalStyle />
     <Navbar />
-    <Logo />
+    <Paragraph />
     <Converter />
   </div>
 );
