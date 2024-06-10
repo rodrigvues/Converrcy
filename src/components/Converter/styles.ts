@@ -23,6 +23,7 @@ export const Input = styled.input`
   font-size: 1.2rem;
   border-radius: 5px;
   border: 1px solid #ddd;
+  font-weight: 500;
 `;
 
 export const SelectContainer = styled.div`
@@ -38,6 +39,7 @@ export const Select = styled.select`
   border-radius: 5px;
   border: 1px solid #E0EEC6;
   color: E0EEC6;
+  font-weight: 700;
 `;
 
 export const ResultButton = styled.div`
@@ -48,6 +50,7 @@ export const ResultButton = styled.div`
   border-radius: 5px;
   font-size: 1.2rem;
   cursor: default;
+  font-weight: 800;
 `;
 
 export const AddButton = styled.button`
@@ -56,10 +59,11 @@ export const AddButton = styled.button`
   padding: 10px;
   margin: 10px 0;
   border: none;
-  border-radius: 50%;
+  border-radius: 5px;
   font-size: 2rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
 `;

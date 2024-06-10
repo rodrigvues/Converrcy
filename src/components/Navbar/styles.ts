@@ -23,6 +23,7 @@ export const NavItem = styled.div`
   cursor: pointer;
   color: #E0EEC6;
   text-decoration: none; // Remove underline
+  font-weight: 500;
 
   &:hover {
     text-decoration: none; // Ensure no underline on hover

@@ -12,7 +12,7 @@ interface ExchangeRatesResponse {
 }
 
 // api key armazenada em variável ( mudarei pra arq. env futuramente )
-const API_KEY = 'cur_live_WeM6eXGSUkbAwLN6YoidkJWx8q7znrHtluU27N5H';
+const API_KEY = 'cur_live_BMCk5QW9ty67Zn4tUqWz2hwSpx1zOWN4us3RzhFM';
 
 
 //começo do código
