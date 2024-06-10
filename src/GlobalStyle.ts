@@ -1,29 +1,21 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-  * {
+  body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    background-color: #004400;
+    color: #ffdd55;
   }
 
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #04471c; /* Change this to your desired background color */
-    color: #E0EEC6; /* Optional: change the default text color */
+  #root {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-  }
-
-  h1 {
-    text-align: center;
-    font-size: 50px;
   }
 `;
 
 export default GlobalStyle;
+
+
