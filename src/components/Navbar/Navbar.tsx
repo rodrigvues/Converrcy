@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavContainer, NavItem, MenuButton } from '../styles';
+import { NavContainer, NavItem, MenuButton } from './styles';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

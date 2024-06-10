@@ -1,5 +1,5 @@
 import React from 'react';
-import { LogoContainer, LogoImage, Title } from '../styles';
+import { LogoContainer, LogoImage, Title } from './styles';
 
 const Logo: React.FC = () => (
   <LogoContainer>

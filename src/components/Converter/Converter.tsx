@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Container, Input, Select, Paragraph, SelectContainer, ResultButton, AddButton } from '../styles';
+import { Container, Input, Select, Paragraph, SelectContainer, ResultButton, AddButton } from './styles';
 // usando interface pra armazenar api key que tem os dados da conversão
 // ( mudarei pra arq. env futuramente )
 interface ExchangeRatesResponse {

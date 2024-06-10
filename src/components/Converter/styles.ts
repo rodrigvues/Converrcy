@@ -61,39 +61,3 @@ export const AddButton = styled.button`
   justify-content: center;
   align-items: center;
 `;
-
-export const NavContainer = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-  background-color: #004400;
-  color: #ffdd55;
-`;
-
-export const NavItem = styled.div`
-  margin: 0 10px;
-  cursor: pointer;
-`;
-
-export const MenuButton = styled.div`
-  cursor: pointer;
-  font-size: 1.5em;
-  margin-right: 10px;
-`;
-
-export const LogoContainer = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 10px;
-`;
-
-export const LogoImage = styled.img`
-  width: 50px; // Adjust this size to fit your design
-  height: 50px; // Adjust this size to fit your design
-  margin-right: 10px;
-`;
-
-export const Title = styled.h1`
-  font-size: 2rem;
-  color: #ffdd55;s
-`;
