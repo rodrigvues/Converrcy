@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Container, Input, Select, SelectContainer, ResultButton, AddButton, RowInput, RowResult } from './styles';
+import { Container, Input, Select, SelectContainer, ResultButton, AddButton, RowInput, RowResult, SelectTo } from './styles';
 // usando interface pra armazenar api key que tem os dados da conversão
 // ( mudarei pra arq. env futuramente )
 interface ExchangeRatesResponse {
@@ -102,13 +102,13 @@ const Converter: React.FC = () => {
           </option>
         ))}
       </Select>
-      <Select value={toCurrency} onChange={handleToCurrencyChange}>
+      <SelectTo value={toCurrency} onChange={handleToCurrencyChange} id="tocurrency" >
         {currencies.map((currency) => (
           < option key={currency} value={currency}>
             {currency}
           </option>
         ))}
-      </Select>
+      </SelectTo>
     </SelectContainer>
   </RowInput>
   <RowResult>

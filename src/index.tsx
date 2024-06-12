@@ -6,12 +6,12 @@ import Navbar from './components/Navbar/Navbar';
 import Paragraph from './components/Paragraph/Paragraph';
 
 const App = () => (
-  <div id="app">
+  <div id="app" >
     <GlobalStyle />
     <Navbar />
     <Paragraph />
     <Converter />
-  </div>
+  </div >
 );
 
 ReactDOM.render(<App />, document.getElementById('root'));
