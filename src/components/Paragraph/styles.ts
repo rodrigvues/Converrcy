@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Title = styled.h1`
-  font-size: 110px;
+  font-size: 90px;
   color: #C2A83E;
   margin-bottom: 1px;
   font-weight: 900;
@@ -9,12 +9,12 @@ export const Title = styled.h1`
 `;
 
 export const ParagraphText = styled.p`
-  margin: 20px 0;
+  margin: 0 ;
   text-align: left;  // Align paragraph text to the left
-  max-width: 600px;
   font-weight: 500;
   margin-bottom:0px;
   font-size: 20px;
+  width: 750px;
 `;
 
 export const WholeParagraph = styled.div`

@@ -6,7 +6,7 @@ const Paragraph: React.FC = () => {
   <WholeParagraph>
     <Title>Converrcy</Title>
     <ParagraphText>
-          Easily convert currencies with real-time exchange rates and share your conversions with friends. Whether you’re traveling or managing your finances, stay updated and share your results with Converrcy!
+          Easily convert currencies with real-time exchange rates and share <br />your conversions with friends. Whether you’re traveling or managing <br />your finances, stay updated and share your results with Converrcy!
     </ParagraphText>
   </WholeParagraph>
   );
