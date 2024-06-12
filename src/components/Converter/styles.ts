@@ -39,6 +39,7 @@ export const Input = styled.input`
   height: 30px;
   margin-right: 5px;
   margin-left: 0px;
+  margin-bottom: 0px;
 `;
 
 export const SelectContainer = styled.div`
@@ -46,6 +47,7 @@ export const SelectContainer = styled.div`
   justify-content: center;
   margin: 10px;
   margin-left: 0px;
+  margin-bottom: 0px;
 `;
 
 export const Select = styled.select`
