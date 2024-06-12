@@ -10,7 +10,7 @@ export const NavContainer = styled.div`
 `;
 
 export const Logo = styled.img`
-  height: 40px;  // Adjust height as needed
+  height: 55px;  // Adjust height as needed
 `;
 
 export const NavItems = styled.div`
@@ -24,7 +24,7 @@ export const NavItem = styled.div`
   color: #E0EEC6;
   text-decoration: none; // Remove underline
   font-weight: 500;
-
+  font-size: 20px;
   &:hover {
     text-decoration: none; // Ensure no underline on hover
   }

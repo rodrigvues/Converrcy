@@ -1,22 +1,30 @@
 import styled from 'styled-components';
 
 export const Title = styled.h1`
-  font-size: 2rem;
+  font-size: 110px;
   color: #C2A83E;
   margin-bottom: 1px;
   font-weight: 900;
+  text-align: left;  // Align title text to the left
 `;
 
 export const ParagraphText = styled.p`
   margin: 20px 0;
-  text-align: left;
+  text-align: left;  // Align paragraph text to the left
   max-width: 600px;
   font-weight: 500;
+  margin-bottom:0px;
+  font-size: 20px;
 `;
 
-export const WholeParagraph = styled.p`
-  text-align: left;
+export const WholeParagraph = styled.div`
+  text-align: left;  // Align container to the left
   max-width: 600px;
   margin: 1px;
-  flex-direction: row
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  align-items: left;  // Ensure content is aligned to the left
 `;
+
