@@ -23,9 +23,10 @@ export const RowInput = styled.div`
 
 export const RowResult = styled.div`
   display: flex;
-  align-items: left;
+  align-items: flex-start; // Align items to the start of the container
   justify-content: left;
   margin-top: 10px;
+  position: relative; // Ensure the container is positioned relatively
 `;
 
 export const Input = styled.input`
@@ -70,15 +71,16 @@ export const ResultButton = styled.div`
   justify-content: center; // Center items horizontally
   height: 77px;
   width: 380px;
+  position: relative; // Ensure the button is positioned relatively
 `;
 
 export const AddButton = styled.button`
   background-color: #7CA982;
   color: white;
   padding: 10px;
-  margin: 10px 0;
+  margin-left: 10px; // Add left margin for spacing
   border: none;
-  border-radius: 5px;
+  border-radius: 13px;
   font-size: 2rem;
   cursor: pointer;
   display: flex;
@@ -86,4 +88,8 @@ export const AddButton = styled.button`
   align-items: center;
   font-weight: 500;
   height: 40px;
+  position: absolute; // Position the button absolutely
+  bottom: 21px; // Align to the bottom of the container
+  right: -45px; // Align to the right of the container
+  transform: translateY(50%); // Adjust the vertical position
 `;
