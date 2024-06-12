@@ -6,7 +6,7 @@ import Navbar from './components/Navbar/Navbar';
 import Paragraph from './components/Paragraph/Paragraph';
 
 const App = () => (
-  <div>
+  <div id="app">
     <GlobalStyle />
     <Navbar />
     <Paragraph />
