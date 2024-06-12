@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 20px;
   background-color: #04471C;
   color: #E0EEC6;
   flex-grow: 1;
@@ -38,22 +37,34 @@ export const Input = styled.input`
   border: 1px solid #ddd;
   font-weight: 500;
   height: 30px;
+  margin-right: 5px;
+  margin-left: 0px;
 `;
 
 export const SelectContainer = styled.div`
   display: flex;
   justify-content: center;
   margin: 10px;
+  margin-left: 0px;
 `;
 
 export const Select = styled.select`
-  margin: 0 5px;
   padding: 10px;
   font-size: 25px;
   border-radius: 15px;
   border: 1px solid #E0EEC6;
   color: E0EEC6;
   font-weight: 700;
+`;
+
+export const SelectTo = styled.select`
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 15px;
+  border: 1px solid #E0EEC6;
+  color: E0EEC6;
+  font-weight: 700;
+  margin-left: 5px;
 `;
 
 export const ResultButton = styled.div`
