@@ -7,13 +7,16 @@ import Paragraph from './components/Paragraph/Paragraph';
 import Footer from './components/Footer/Footer';
 
 const App = () => (
-  <div id="app" >
+  <div id="app">
     <GlobalStyle />
     <Navbar />
     <Paragraph />
     <Converter />
-    < Footer/>
-  </div >
+  </div>
 );
 
+// Render the main app component
 ReactDOM.render(<App />, document.getElementById('root'));
+
+// Render the footer component into the footer-root div
+ReactDOM.render(<Footer />, document.getElementById('footer-root'));
