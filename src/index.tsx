@@ -4,6 +4,7 @@ import Converter from './components/Converter/Converter';
 import GlobalStyle from './GlobalStyle';
 import Navbar from './components/Navbar/Navbar';
 import Paragraph from './components/Paragraph/Paragraph';
+import Footer from './components/Footer/Footer';
 
 const App = () => (
   <div id="app" >
@@ -11,6 +12,7 @@ const App = () => (
     <Navbar />
     <Paragraph />
     <Converter />
+    < Footer/>
   </div >
 );
 
