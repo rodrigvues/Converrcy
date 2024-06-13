@@ -9,7 +9,12 @@ const GlobalStyle = createGlobalStyle`
     background-color: #04471C;
     color: #E0EEC6;
     display: flex;
+    overflow: scroll;
   }
+
+  body::-webkit-scrollbar {
+    display: none;
+}
 
   #root {
     height: 100%;
