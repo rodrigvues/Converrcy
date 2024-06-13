@@ -11,6 +11,8 @@ export const Container = styled.div`
   width: 100%;
   max-width: 600px; // Ensure it doesn't stretch too wide
   margin-top: 0px;
+  margin-left: 45px;
+  margin-right: 45px;
 `;
 
 export const RowInput = styled.div`
@@ -29,7 +31,7 @@ export const RowResult = styled.div`
 `;
 
 export const Input = styled.input`
-  width: 100px;
+  width: 330px;
   padding: 10px;
   margin: 10px;
   font-size: 1.2rem;
@@ -57,6 +59,7 @@ export const Select = styled.select`
   border: 1px solid #E0EEC6;
   color: E0EEC6;
   font-weight: 700;
+  width: 60px;
 `;
 
 export const SelectTo = styled.select`
@@ -67,6 +70,7 @@ export const SelectTo = styled.select`
   color: E0EEC6;
   font-weight: 700;
   margin-left: 5px;
+  width: 60px;
 `;
 
 export const ResultButton = styled.div`
@@ -83,7 +87,7 @@ export const ResultButton = styled.div`
   align-items: center; // Center items vertically
   justify-content: center; // Center items horizontally
   height: 77px;
-  width: 380px;
+  width: 445px;
   position: relative; // Ensure the button is positioned relatively
 `;
 
@@ -99,7 +103,7 @@ export const AddButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 500;
+  font-weight: 700;
   height: 40px;
   position: absolute; // Position the button absolutely
   bottom: 21px; // Align to the bottom of the container
