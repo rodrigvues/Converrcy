@@ -113,7 +113,7 @@ const Converter: React.FC = () => {
   </RowInput>
   <RowResult>
     <ResultButton>
-      {amount} {fromCurrency} → {convert(amount, exchangeRate)} {toCurrency}
+      {amount} {fromCurrency} is {convert(amount, exchangeRate)} {toCurrency}
     </ResultButton>
     <AddButton>+</AddButton>
   </RowResult>
