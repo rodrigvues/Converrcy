@@ -1,11 +1,12 @@
 import React from 'react';
-import { FooterBox, CtaSection, FooterColumns, FooterColumn, FooterEnd, Input, Button, FooterContainer, Rights, GitHubIcon } from './styles';
+import { FooterBox, CtaSection, FooterColumns, FooterColumn, FooterEnd, Input, Button, FooterContainer, Rights, GitHubIcon, CTAText } from './styles';
+import githubicon from '../../assets/images/github-icon.png'; // Adjust the path based on your folder structure
 
 const Footer: React.FC = () => {
   return (
     <FooterBox>
       <CtaSection>
-        <h3>Subscribe for updates</h3>
+        <CTAText>Keep up with Converrcy updates:<br/>Subscribe in our NewsLetter!</CTAText>
         <Input type="email" placeholder="Enter your email" />
         <Button type="submit">Subscribe</Button>
       </CtaSection>
@@ -28,8 +29,8 @@ const Footer: React.FC = () => {
         </FooterColumns>
         <FooterEnd>
           <Rights>&copy; 2024 Converrcy, All rights reserved.</Rights>
-          <GitHubIcon href="https://github.com/">
-            <img src="github-icon.png" alt="GitHub" />
+          <GitHubIcon href="https://github.com/rodrigvues">
+            <img src={githubicon} alt="GitHub" />
           </GitHubIcon>
         </FooterEnd>
       </FooterContainer>
