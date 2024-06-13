@@ -8,12 +8,11 @@ Converrcy é um projeto em React para um conversor de moedas online, desenvolvid
 
 ## Tecnologias Utilizadas
 
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **TypeScript**: Superset de JavaScript que adiciona tipagem estática ao código.
+- **React**: Projeto construído em base no framework de JavaScript.
+- **TypeScript**: Focado no uso de TypeScript.
 - **Styled Components**: Biblioteca para estilização dos componentes utilizando CSS-in-JS.
 - **Figma**: Ferramenta usada para o design da interface do usuário.
-- **Visual Studio Code**: Editor de código utilizado no desenvolvimento do projeto.
-
+- **Visual Studio Code**: IDE Utilizada
 
 ## Design Proposto
 
