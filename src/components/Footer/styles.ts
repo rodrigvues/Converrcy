@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const FooterBox = styled.div`
   background-color: #E0EEC6;
   color: #04471C;
-  padding: 0;
+  padding-top: 50px;  /* Add padding to the top to make the box taller */
   margin-top: 125px;
   width: 100%;
+  position: relative;
 `;
 
 export const CtaSection = styled.div`
@@ -15,6 +16,9 @@ export const CtaSection = styled.div`
   text-align: left;
   width: 100%;
   box-sizing: border-box;
+  margin-top: -20px;  /* Adjust margin to overlap with the footer box */
+  position: relative;
+  z-index: 1;
 `;
 
 export const CTAText = styled.h3`
