@@ -6,6 +6,7 @@ export const Title = styled.h1`
   margin-bottom: 1px;
   font-weight: 900;
   text-align: left;  // Align title text to the left
+  margin-left: -2px;
 `;
 
 export const ParagraphText = styled.p`
@@ -26,5 +27,7 @@ export const WholeParagraph = styled.div`
   flex-grow: 1;
   width: 100%;
   align-items: left;  // Ensure content is aligned to the left
+  margin-left: 45px;
+  margin-right: 45px;
 `;
 
