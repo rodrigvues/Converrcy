@@ -2,19 +2,24 @@ import styled from 'styled-components';
 
 export const FooterBox = styled.div`
   background-color: #E0EEC6;
-  color: black;
+  color: #04471C;
   padding: 0;
   margin-top: 125px;
   width: 100%;
 `;
 
 export const CtaSection = styled.div`
-  background-color: black;
-  color: #E0EEC6;
+  background-color: #C2A83E;
+  color: #04471C;
   padding: 20px;
-  text-align: center;
+  text-align: left;
   width: 100%;
   box-sizing: border-box;
+`;
+
+export const CTAText = styled.h3`
+  margin-bottom: 9px;
+  margin-top: 0px;
 `;
 
 export const Input = styled.input`
@@ -24,8 +29,8 @@ export const Input = styled.input`
 
 export const Button = styled.button`
   padding: 10px 20px;
-  background-color: #E0EEC6;
-  color: black;
+  background-color: #04471C;
+  color: #E0EEC6;
   border: none;
   cursor: pointer;
 `;
@@ -61,7 +66,7 @@ export const FooterColumn = styled.div`
   }
 
   ul li a {
-    color: black;
+    color: #04471C;
     text-decoration: none;
   }
 `;
