@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavContainer, NavItems, NavItem, Logo } from './styles';
+import { NavContainer, NavItems, NavItem, Logo, ThemeSwitch, SwitchInput, SwitchLabel, SwitchSlider } from './styles';
 import logo from '../../assets/images/logo.png'; // Adjust the path based on your folder structure
 
 const Navbar: React.FC = () => {
@@ -9,7 +9,12 @@ const Navbar: React.FC = () => {
       <NavItems>
         <NavItem>About</NavItem>
         <NavItem>More Projects</NavItem>
-        <NavItem>Contact</NavItem>
+        <ThemeSwitch>
+          <SwitchInput type="checkbox" id="themeSwitch" />
+          <SwitchLabel htmlFor="themeSwitch">
+            <SwitchSlider />
+          </SwitchLabel>
+        </ThemeSwitch>
       </NavItems>
     </NavContainer>
   );
