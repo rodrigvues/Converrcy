@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "webpack serve --open",
-    "build": "webpack --mode production"
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production && cp src/_redirects build/"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.34",
